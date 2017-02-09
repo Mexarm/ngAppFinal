@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+
+import { UsersRouting } from './users/users.routing';
+import { PostsRouting } from './posts/posts.routing';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -32,6 +35,8 @@ import { DialogService } from './dialog.service';
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    UsersRouting,
+    PostsRouting,
     AppRoutingModule
   ],
   providers: [
