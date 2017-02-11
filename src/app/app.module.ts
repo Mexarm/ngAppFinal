@@ -14,11 +14,14 @@ import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
 
 import { UsersService } from './users/users.service';
+import { PostsService } from './posts/posts.service';
 import { UserFormComponent } from './users/user-form/user-form.component';
 import { NotFoundComponent } from './not-found.component';
 
 //import { CanDeactivateGuard } from './can-deactivate-guard.service';
 import { DialogService } from './dialog.service';
+import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { PostDetailComponent } from './posts/post-detail.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import { DialogService } from './dialog.service';
     UsersComponent,
     PostsComponent,
     UserFormComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SpinnerComponent,
+    PostDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +46,7 @@ import { DialogService } from './dialog.service';
   ],
   providers: [
     UsersService,
+    PostsService,
     DialogService
   ],
   bootstrap: [AppComponent]
