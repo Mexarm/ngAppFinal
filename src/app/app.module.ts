@@ -21,7 +21,7 @@ import { NotFoundComponent } from './not-found.component';
 //import { CanDeactivateGuard } from './can-deactivate-guard.service';
 import { DialogService } from './dialog.service';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
-import { PostDetailComponent } from './posts/post-detail.component';
+import { PaginationComponent } from './shared/pagination.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import { PostDetailComponent } from './posts/post-detail.component';
     UserFormComponent,
     NotFoundComponent,
     SpinnerComponent,
-    PostDetailComponent
+    PaginationComponent,
   ],
   imports: [
     BrowserModule,

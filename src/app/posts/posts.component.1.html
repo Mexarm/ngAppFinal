@@ -13,10 +13,12 @@
     </select>
 </div>
 
-<app-pagination [items]="posts" pageSize="10" (pageChanged)="onPageChanged($event)" (itemClicked)="selectPost($event)">  </app-pagination>
 
 
-   
+
+    <ul class="list-group posts">
+      <li *ngFor="let post of posts" (click)="selectPost(post)" [class.active]="currentPost==post" class="list-group-item">{{post.title}}</li>
+    </ul>
   </div>
   <div *ngIf="currentPost">
     <div class="col-md-6">
